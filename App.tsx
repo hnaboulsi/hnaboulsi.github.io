@@ -28,10 +28,10 @@ function App() {
   const toggleDarkMode = () => setDarkMode(!darkMode);
 
   return (
-    <div className="min-h-screen font-sans selection:bg-electric selection:text-white">
+    <div className="min-h-screen font-sans selection:bg-electric selection:text-white flex flex-col justify-between">
       <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       
-      <main>
+      <main className="flex-grow">
         <Hero />
         <About />
       </main>
